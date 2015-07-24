@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2967DF1B61AE4200037550 /* Film.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2967DE1B61AE4200037550 /* Film.m */; };
+		BC2967E21B61AF7200037550 /* FilmFromNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2967E11B61AF7200037550 /* FilmFromNetwork.m */; };
 		BCDDBE2F1B5F08790099E56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDDBE2E1B5F08790099E56C /* main.m */; };
 		BCDDBE321B5F08790099E56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDDBE311B5F08790099E56C /* AppDelegate.m */; };
 		BCDDBE351B5F08790099E56C /* FilmFront.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCDDBE331B5F08790099E56C /* FilmFront.xcdatamodeld */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC2967DD1B61AE4200037550 /* Film.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Film.h; sourceTree = "<group>"; };
+		BC2967DE1B61AE4200037550 /* Film.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Film.m; sourceTree = "<group>"; };
+		BC2967E01B61AF7200037550 /* FilmFromNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmFromNetwork.h; sourceTree = "<group>"; };
+		BC2967E11B61AF7200037550 /* FilmFromNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmFromNetwork.m; sourceTree = "<group>"; };
 		BCDDBE291B5F08790099E56C /* FilmFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDDBE2D1B5F08790099E56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCDDBE2E1B5F08790099E56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				BCDDBE391B5F08790099E56C /* Main.storyboard */,
 				BCDDBE361B5F08790099E56C /* ViewController.h */,
 				BCDDBE371B5F08790099E56C /* ViewController.m */,
+				BC2967E01B61AF7200037550 /* FilmFromNetwork.h */,
+				BC2967E11B61AF7200037550 /* FilmFromNetwork.m */,
+				BC2967DD1B61AE4200037550 /* Film.h */,
+				BC2967DE1B61AE4200037550 /* Film.m */,
 				BCDDBE551B5F0EC70099E56C /* PersonCollectionViewCell.h */,
 				BCDDBE561B5F0EC70099E56C /* PersonCollectionViewCell.m */,
 				BCDDBE301B5F08790099E56C /* AppDelegate.h */,
@@ -230,8 +240,10 @@
 				BCDDBE321B5F08790099E56C /* AppDelegate.m in Sources */,
 				BCDDBE351B5F08790099E56C /* FilmFront.xcdatamodeld in Sources */,
 				BCDDBE571B5F0EC70099E56C /* PersonCollectionViewCell.m in Sources */,
+				BC2967DF1B61AE4200037550 /* Film.m in Sources */,
 				BCDDBE381B5F08790099E56C /* ViewController.m in Sources */,
 				BCDDBE2F1B5F08790099E56C /* main.m in Sources */,
+				BC2967E21B61AF7200037550 /* FilmFromNetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +438,7 @@
 				BCDDBE511B5F08790099E56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCDDBE521B5F08790099E56C /* Build configuration list for PBXNativeTarget "FilmFrontTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +447,7 @@
 				BCDDBE541B5F08790099E56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

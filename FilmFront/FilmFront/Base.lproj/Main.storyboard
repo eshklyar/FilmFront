@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="20o-Zz-5hB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -62,19 +63,40 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="IzQ-yH-I8l"/>
                                 </connections>
                             </collectionView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mpu-Nh-KiL">
+                                <rect key="frame" x="40" y="275" width="240" height="240"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mpu-Nh-KiL" secondAttribute="height" multiplier="60:59" constant="-4.0677966101694665" id="luP-X8-ElO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QZg-IX-Gce" appends="YES" id="pG8-Lv-NZa"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="W9t-Pv-ksk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="Hw0-14-NPQ"/>
                             <constraint firstItem="W9t-Pv-ksk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="LOK-aK-cHK"/>
+                            <constraint firstItem="mpu-Nh-KiL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="doD-QY-Nmk"/>
+                            <constraint firstAttribute="trailing" secondItem="mpu-Nh-KiL" secondAttribute="trailing" constant="40" id="ig0-6w-SFn"/>
+                            <constraint firstItem="mpu-Nh-KiL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="211" id="prG-X5-hh5"/>
                             <constraint firstAttribute="trailing" secondItem="W9t-Pv-ksk" secondAttribute="trailing" constant="10" id="qRd-RM-oNp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mmg-B6-Mef"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="filmImageView" destination="mpu-Nh-KiL" id="Zjf-4j-6PZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="QZg-IX-Gce">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="IHy-SF-qgW"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1828" y="345"/>
         </scene>
